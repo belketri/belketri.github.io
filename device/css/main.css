@@ -12,6 +12,8 @@
     font-style: normal;
 }
 
+/*================ ОБЩИЕ СТИЛИ ================*/
+
 * {
 
     margin: 0;
@@ -83,7 +85,7 @@ body {
     margin: 0 auto;
 }
 
-/*================MAIN HEADER================*/
+/*================ MAIN HEADER ================*/
 
 .main-header {
 
@@ -169,18 +171,6 @@ body {
     position: relative;
 }
 
-.find-btn {
-
-    display: none;
-    width: 85px;
-    height: 49px;
-    border: 2px solid #000000;
-    background: none;
-    position: absolute;
-    top: -23px;
-    right: 0;
-    cursor: pointer;
-}
 
 /*-- USER NAV --*/
 
@@ -390,10 +380,6 @@ body {
     max-width: 1076px;
     margin-top: -112px;
     position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
     user-select: none;
     z-index: 0;
 }
@@ -408,11 +394,7 @@ body {
     min-width: 1020px;
     padding-left: 90px;
     padding-right: 60px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 }
 
@@ -592,11 +574,7 @@ body {
     width: 12px;
     height: 12px;
     margin-right: 21px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
     transition: 1s;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     position: relative;
 }
@@ -664,7 +642,7 @@ body {
     display: block;
     width: 160px;
     height: 160px;
-    background-color: rgb(240, 197, 46, .5);
+    background-color: rgba(240, 197, 46, 0.5);
     background-image: url(../img/popular-sprite.png);
     background-repeat: no-repeat;
     background-position: 35px 35px;
@@ -1245,17 +1223,6 @@ main-footer_user-nav {
     border-bottom: 2px solid #000000;
     opacity: 1;
     padding-bottom: 5px;
-}
-
-.search-input:focus + .find-btn {
-
-    display: block;
-}
-
-.find-btn:hover {
-
-    background: #000000;
-    color: #ffffff;
 }
 
 .main-link:hover::after {
