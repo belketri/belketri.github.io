@@ -1,0 +1,8 @@
+a {
+    
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url(device/img/slide-1.png) no-repeat;
+}
