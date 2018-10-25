@@ -16,6 +16,13 @@ body {
 
 /*======= ОБЩИЕ СТИЛИ =======*/
 
+.container {
+
+    max-width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .section-flex-wrap {
 
     display: flex;
@@ -54,11 +61,10 @@ body {
     margin-bottom: 30px;
 }
 
-.container {
-
-    max-width: 940px;
-    padding: 0 10px;
-    margin: 0 auto;
+.inner-page-section-title {
+    
+    font-size: 24px;
+    line-height: 30px;
 }
 
 /*==================================== ГЛАВНАЯ СТРАНИЦА ====================================*/
@@ -549,7 +555,7 @@ a {
 
 /*======= MAIN SHOP =======*/
 
-.shop-main-title {
+.page-title {
 
     margin-top: 55px;
     margin-bottom: 0;
@@ -558,7 +564,7 @@ a {
     font-size: 30px;
 }
 
-.shop-breadcrumbs {
+.breadcrumbs {
 
     margin-top: 25px;
     list-style: none;
@@ -819,6 +825,138 @@ a {
     left: 0;
 }
 
+/*==================================== PRICE-LIST ====================================*/
+
+/*======= PRICE TITLE =======*/
+
+.price-title {
+    
+    min-width: 197px;
+    margin-top: 55px;
+    padding: 0 186px;
+    position: relative;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+}
+.price-title::before {
+    
+    content: '';
+    display: block;
+    width: 160px;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.price-title::after {
+    
+    content: '';
+    display: block;
+    width: 160px;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.price-section-flex-wrap {
+    
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*======= CARE PRODUCTS =======*/
+
+.our-care-products {
+    
+    max-width: 240px;
+}
+.care-products-list {
+    
+    margin-top: 35px;
+    list-style: none;
+}
+.care-products-item {
+    
+    padding-left: 23px;
+    position: relative;
+}
+.care-products-item:not(:last-of-type) {
+    
+    margin-bottom: 20px;
+    
+}
+.care-products-item::before {
+    
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/breadcrumbs-shape.png) no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    
+}
+.care-products-item a {
+    
+    color: #000000;
+}
+
+/*======= OUR PRICE =======*/
+
+.our-price {
+    
+    max-width: 460px;
+}
+.our-price h2 {
+    
+    max-width: 180px;
+}
+.our-price-table {
+    
+    width: 460px;
+    margin-top: 35px;
+    border-collapse: collapse;
+}
+.price-column {
+    
+    width: 231px;
+    border: 2px solid #000101;
+    padding: 9px 0;
+    padding-left: 15px;
+    line-height: 24px;
+}
+.service-price {
+    
+    text-align: center;
+}
+
+/*======= ABOUT US =======*/
+
+.about-us {
+    
+    margin-top: 70px;
+}
+.about-us-flex-wrap {
+    
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-us_text-column-1 {
+    
+    max-width: 385px;
+}
+.about-us_text-column-2 {
+    
+    max-width: 377px;
+    margin-right: 81px;
+}
 
 
 
@@ -1128,4 +1266,12 @@ input[type="radio"]+label:hover {
 .catalog-pagination-item a:focus {
     
     background-color: #663d15;
+}
+
+/*======= PRICE HOVER/FOCUS/ACTIVE =======*/
+
+.care-products-item a:hover,
+.care-products-item a:focus {
+    
+    color: #663d15;
 }
