@@ -637,27 +637,27 @@ c_links a {
   background: url(../img/social.png) no-repeat;
 }
 
-.soc_links .twitter {
+.soc_links .tw {
   background-position: -38px;
 }
 
-.soc_links .instagram {
+.soc_links .inst {
   background-position: -84px;
 }
 
-.soc_links .google_plus {
+.soc_links .gplus {
   background-position: -133px;
 }
 
-.soc_links .linkedin {
+.soc_links .ld {
   background-position: -179px;
 }
 
-.soc_links .youtube {
+.soc_links .yt {
   background-position: -228px;
 }
 
-.soc_links .some_soc_network {
+.soc_links .some_soc {
   background-position: -278px 3px;
 }
 
