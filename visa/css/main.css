@@ -630,7 +630,7 @@ body {
   height: 20px;
 }
 
-c_links a {
+.soc_links a {
   display: block;
   width: inherit;
   height: inherit;
