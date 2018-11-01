@@ -709,7 +709,7 @@ a {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: url(../img/social-sprite.png) no-repeat;
+    background: url(../img/soc-sprite.png) no-repeat;
 }
 
 .main-footer__soc-item:nth-of-type(2) a {
