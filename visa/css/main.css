@@ -626,8 +626,8 @@ body {
 }
 
 .soc_links {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 .soc_links a {
@@ -636,29 +636,31 @@ body {
   height: inherit;
   background: url(../img/soc.png) no-repeat;
 }
-
+.soc_links .fb {
+    background-position: 5px 2px;
+}
 .soc_links .tw {
-  background-position: -38px;
+background-position: -37px 2px;
 }
 
 .soc_links .inst {
-  background-position: -84px;
+    background-position: -84px 2px;
 }
 
 .soc_links .gplus {
-  background-position: -133px;
+background-position: -131px 2px;
 }
 
 .soc_links .ld {
-  background-position: -179px;
+    background-position: -180px 1px;
 }
 
 .soc_links .yt {
-  background-position: -228px;
+    background-position: -227px 2px;
 }
 
 .soc_links .some_soc {
-  background-position: -278px 3px;
+background-position: -276px 2px;
 }
 
 .soc_links a:hover,
