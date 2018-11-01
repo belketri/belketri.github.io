@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gllacy</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="main-header container flex-column-wrap">
+
+        <div class="main-logo">
+            <a href="#" class="logo">
+              <img src="img/logo.png" width="154" height="64" alt="logo">
+          </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul class="main-nav__list list-style flex-wrap">
+
+                <li class="main-nav__item main-nav--catalog">
+                    <a href="#" class="main-nav__link active-main-menu">Каталог</a>
+
+                    <ul class="main-menu list-style" id="main-menu">
+                        <li class="main-menu__item main-menu__new">
+                            <h3 class="main-menu__title">Новинки</h3>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Сливочное</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Щербеты</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Фруктовый лед</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Мелорин</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="main-nav__item main-nav--delivery-payments">
+                    <a href="#" class="main-nav__link">Доставка и оплата</a>
+                </li>
+
+                <li class="main-nav__item main-nav--about-company">
+                    <a href="#" class="main-nav__link">О компании</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <nav class="user-nav">
+
+            <ul class="main-nav__list main-nav__list--user list-style flex-wrap">
+                <li class="user-nav__item user-search">
+                    <a href="#" id="active-user-search"></a>
+                </li>
+                <li class="user-nav__item login-user-wrap">
+                    <a href="#" id="active-user-login" class="user-nav__link">Вход</a>
+                </li>
+                <li class="user-nav__item">
+                    <a href="#" class="user-nav__cart user-nav__link">Пусто</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="main-header__contact-info">
+            <p class="work-hours">С 10 до 20, ежедневно</p>
+            <span class="phone">8 812 450-25-25</span>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="main-slider container">
+            <h2 class="visually-hidden">Главный слайдер</h2>
+            <div class="main-slider__viewport">
+
+                <ul class="main-slider__body owl-carousel">
+                    <li class="slide slide1 ">
+
+                        <img src="img/slide1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+                        <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
+                        <button class="main-slider__btn main-btn">Давайте оба!</button>
+
+                    </li>
+
+                    <li class="slide slide2">
+
+                        <img src="img/slide2.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
+                        <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет </h2>
+                        <button class="main-slider__btn main-btn">Давайте оба!</button>
+
+                    </li>
+
+                    <li class="slide slide3">
+
+                        <img src="img/slide3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
+                        <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
+                        <button class="main-slider__btn main-btn">Давайте оба!</button>
+
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </section>
+
+        <section class="banners container flex-wrap">
+            <h2 class="visually-hidden">Банеры</h2>
+
+            <div class="banner raspberries-banner">
+                <h2 class="banner__title">Малинка даром!</h2>
+                <p class="banner__content">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <button class="banner__btn main-btn raspberries-bnt">Хочу варенье!</button>
+            </div>
+
+            <div class="banner chocolate-banner">
+                <h2 class="banner__title">Шоколадки даром!</h2>
+                <p class="banner__content">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
+                <button class="banner__btn main-btn chocolate-btn">Хочу шоколадки!</button>
+            </div>
+
+        </section>
+
+        <section class="hits container">
+           <h2 class="visually-hidden">Хиты</h2>
+            <ul class="hits__list list-style flex-wrap">
+                <li class="hits__item">
+                    <div class="hits__item-img">
+                        <img src="img/ice-cream1.png" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
+                    </div>
+
+                    <p class="hits__price--container">
+                        <span class="price">310</span>
+                        <span class="weight">/кг</span>
+                    </p>
+
+                    <a href="#" class="hits__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    <button class="main-btn hits-btn">Быстрый просмотр</button>
+                </li>
+
+                <li class="hits__item">
+
+                    <div class="hits__item-img">
+                        <img src="img/ice-cream2.png" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
+                    </div>
+
+                    <p class="hits__price--container">
+                        <span class="price">380</span>
+                        <span class="weight">/кг</span>
+                    </p>
+
+                    <a href="#" class="hits__link">Сливочно-кофейное с кусочками шоколада</a>
+                    <button class="main-btn hits-btn">Быстрый просмотр</button>
+                </li>
+
+                <li class="hits__item">
+                    <div class="hits__item-img">
+                        <img src="img/ice-cream3.png" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
+                    </div>
+
+                    <p class="hits__price--container">
+                        <span class="price">355</span>
+                        <span class="weight">/кг</span>
+                    </p>
+
+                    <a href="#" class="hits__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                    <button class="main-btn hits-btn">Быстрый просмотр</button>
+                </li>
+
+                <li class="hits__item">
+                    <div class="hits__item-img">
+                        <img src="img/ice-cream4.png" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом и цитрусовой стружкой">
+                    </div>
+
+                    <p class="hits__price--container">
+                        <span class="price">415</span>
+                        <span class="weight">/кг</span>
+                    </p>
+
+                    <a href="#" class="hits__link">Сливочное крем-брюле с карамельной подливкой</a>
+                    <button class="main-btn hits-btn">Быстрый просмотр</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="seo container">
+            <h2 class="seo__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+            <ul class="seo__list list-style flex-column-wrap">
+                <li class="seo__item">
+                    <p class="seo__text">Все наше мороженое изготавливается на собственном производстве, с использованием современного <span>оборудования</span> и проверенных временем технологий.</p>
+                </li>
+
+                <li class="seo__item">
+                    <p class="seo__text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                </li>
+
+                <li class="seo__item">
+                    <p class="seo__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все <span>дополнительные</span> ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                </li>
+
+                <li class="seo__item">
+                    <p class="seo__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="blog-news container flex-wrap">
+            <h2 class="visually-hidden">Новости блога</h2>
+
+            <div class="blog-news__body">
+                <h3 class="blog-news__title">Новое в нашем блоге</h3>
+                <a href="#" class="blog-news__link">
+                        <span>10 способов сервировки фруктовых щербетов к столу</span>
+                    </a>
+            </div>
+
+            <div class="blog-news__newsletter">
+                <div class="newsletter-substrate">
+                    <p class="newsletter-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                    <form action="#" method="get" class="newsletter-form">
+                        <label>
+                            <input type="email" name="user-email" id="user-email" class="input-wrap" placeholder="Электронная почта">
+                        </label>
+                           <label>
+                            <input type="submit" name="submit-email" class="submit-email main-btn" value="Отправить">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+               <h2 class="visually-hidden">Карта</h2>
+                <div class="container">
+                    <div class="feedback">
+                        <p class="feedback__contacts--container">
+                            Адрес главного офиса <br> и офлайн-магазина:
+                            <span class="feedback__contacts feedback__contacts--adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                        </p>
+
+                        <p class="feedback__contacts--container">
+                            Для заказов по телефону:
+                            <span class="feedback__contacts feedback__contacts--phone">8 812 450-25-25</span> (с 10 до 20 ежедневно)
+                        </p>
+
+                        <a href="#" class="main-btn" id="active-feedback">Форма обратной связи</a>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer container flex-wrap">
+
+        <ul class="main-footer__social flex-wrap list-style">
+            <li class="main-footer__social-item">
+                <a href="#" class="main-footer__social-link"></a>
+            </li>
+
+            <li class="main-footer__social-item">
+                <a href="#" class="main-footer__social-link"></a>
+            </li>
+
+            <li class="main-footer__social-item">
+                <a href="#" class="main-footer__social-link"></a>
+            </li>
+
+            <li class="main-footer__social-item">
+                <a href="#" class="main-footer__social-link"></a>
+            </li>
+        </ul>
+
+        <ul class="main-footer__menu flex-column-wrap list-style">
+            <li class="main-footer__menu-item">
+                <a href="#" class="main-footer__menu-link">Для поставщиков</a>
+            </li>
+
+            <li class="main-footer__menu-item">
+                <a href="#" class="main-footer__menu-link">Наши документы</a>
+            </li>
+
+            <li class="main-footer__menu-item">
+                <a href="#" class="main-footer__menu-link">О производстве</a>
+            </li>
+
+            <li class="main-footer__menu-item">
+                <a href="#" class="main-footer__menu-link">Экологические стандарты</a>
+            </li>
+        </ul>
+
+        <div class="main-footer__copyright">
+            <a href="#" class="copyright-logo"></a>
+            <p class="copyright-text">Сделано в
+                <a href="#">HTML Academy</a> © 2017</p>
+        </div>
+    </footer>
+
+
+    <!-- МОДАЛЬНЫЕ ОКНА -->
+
+    <!-- ФОРМА ПОИСКА -->
+    <div id="user-search">
+        <form action="#" method="post" class="user-search__form">
+            <label>
+                <input type="search" name="user-search" id="user-search__input" class="input-wrap" placeholder="Что ищем?">
+            </label>
+        </form>
+    </div>
+
+    <!-- ФОРМА ВХОДА -->
+    <div id="user-login">
+        <form action="#" method="get" class="user-login__form">
+            <label class="user-login__email label-wrap">
+                <input type="email" name="user-email" class="input-wrap" placeholder="Электронная почта">
+            </label>
+
+            <label class="user-login__password label-wrap">
+                <input type="password" name="user-password" class="input-wrap" placeholder="Пароль">
+            </label>
+
+            <div class="flex-wrap">
+                <input type="submit" name="login" class="user-login__btn main-btn" value="Войти">
+                <div class="user-login__link-container">
+                    <a href="#" class="user-login__link">Забыли пароль?</a>
+                    <a href="#" class="user-login__link">Новая регистрация</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- ОБРАТНАЯ СВЯЗЬ -->
+
+    <div id="open-feedback">
+        <div class="overlay"></div>
+        <div class="feedback-window">
+            <p class="feedback-form__signature">Мы обязательно вам ответим!</p>
+            <button id="feedback-close"></button>
+            <form action="#" method="get" id="feedback-form">
+                <label class="feedback-name__input label-wrap">
+            <input type="text" name="username" class="input-wrap" placeholder="Как вас зовут?">
+        </label>
+
+                <label class="feedback-email__input label-wrap">
+            <input type="email" name="user-email" class="input-wrap" placeholder="Ваша почта для ответа?">
+        </label>
+
+                <textarea form="feedback-form" name="user-message" class="feedback-textarea input-wrap" placeholder="Напишите что-нибудь..."></textarea>
+
+                <input type="submit" name="send-feeback" class="feedback-btn main-btn" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
