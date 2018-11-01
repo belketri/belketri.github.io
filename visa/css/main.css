@@ -617,7 +617,7 @@ body {
   margin-left: 85px;
 }
 
-.footer_top_social {
+.footer_top_soc {
   margin-top: 49px;
   margin-left: 85px;
   width: 295px;
@@ -625,44 +625,44 @@ body {
   justify-content: space-between;
 }
 
-.social_links {
+.soc_links {
   width: 20px;
   height: 20px;
 }
 
-.social_links a {
+c_links a {
   display: block;
   width: inherit;
   height: inherit;
   background: url(../img/social.png) no-repeat;
 }
 
-.social_links .twitter {
+.soc_links .twitter {
   background-position: -38px;
 }
 
-.social_links .instagram {
+.soc_links .instagram {
   background-position: -84px;
 }
 
-.social_links .google_plus {
+.soc_links .google_plus {
   background-position: -133px;
 }
 
-.social_links .linkedin {
+.soc_links .linkedin {
   background-position: -179px;
 }
 
-.social_links .youtube {
+.soc_links .youtube {
   background-position: -228px;
 }
 
-.social_links .some_soc_network {
+.soc_links .some_soc_network {
   background-position: -278px 3px;
 }
 
-.social_links a:hover,
-.social_links a:focus {
+.soc_links a:hover,
+.soc_links a:focus {
   outline: none;
   box-shadow: 0 0 1px 2px rgba(255, 255, 255, 1);
   border-radius: 5px;
