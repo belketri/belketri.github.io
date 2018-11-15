@@ -870,9 +870,10 @@ a {
     padding: 16px 25px 23px 25px;
     background-color: #f8f7f4;
     border-radius: 20px;
-    position: absolute;
-    top: 337px;
-    left: 569px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: 9999999;
 }
 
