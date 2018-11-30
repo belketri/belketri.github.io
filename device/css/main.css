@@ -265,15 +265,13 @@ body {
 
 .submenu-wrapper {
     display: none;
-    margin-top: 40px;
     position: absolute;
     left: -60px;
+    top: -1000px;
     min-width: 1040px;
     background-color: #f7e296;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 40px 60px 10px;
     z-index: 1;
-    padding-bottom: 10px;
 }
 
 #catalog-item {
@@ -289,6 +287,7 @@ body {
 :checked ~ .submenu-wrapper {
 
     display: flex;
+    top: 23px;
 }
 
 .checkbox-wrapper {
@@ -345,6 +344,7 @@ body {
     text-decoration: none;
     color: #000000;
     letter-spacing: 3.6px;
+    user-select: none;
 }
 
 /*-- ОСНОВНАЯ НАВИГАЦИЯ --*/
@@ -394,19 +394,19 @@ body {
     min-width: 1020px;
     padding-left: 90px;
     padding-right: 60px;
-    transition: 1s;
-    transition-timing-function: ease-in-out;
 }
 
 .slide {
     position: relative;
     display: flex;
     align-items: flex-end;
+
 }
 
 .slide-content {
 
     width: 495px;
+
 }
 
 .slide1::after {
@@ -421,6 +421,7 @@ body {
     position: absolute;
     top: -22px;
     right: 41px;
+
 
 }
 
@@ -457,6 +458,7 @@ body {
 .slide1 .slide-image {
 
     align-self: flex-start;
+
 }
 
 .slide1 .slide-title {
@@ -536,6 +538,7 @@ body {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .slide-options b {
@@ -567,6 +570,7 @@ body {
     right: 159px;
     top: 320px;
 
+
 }
 
 .owl-dot {
@@ -574,8 +578,6 @@ body {
     width: 12px;
     height: 12px;
     margin-right: 21px;
-    transition: 1s;
-    transition-timing-function: ease-in-out;
     position: relative;
 }
 
@@ -599,6 +601,7 @@ body {
     position: absolute;
     right: 9px;
     top: 319px;
+
 }
 
 .switch-btn {
@@ -609,6 +612,7 @@ body {
     border: 1px solid #000000;
     background: none;
     cursor: pointer;
+
 }
 
 .switch:not(:last-of-type) {
@@ -745,6 +749,7 @@ body {
 
     width: 160px;
     cursor: pointer;
+    position: relative;
 }
 
 .services-link::after {
@@ -810,6 +815,36 @@ body {
 #delivery-link:checked ~ .delivery-icon {
 
     display: block;
+}
+
+#delivery-link:checked ~ .services-navigation .delivery-toogle::before,
+#warranty-link:checked ~ .services-navigation .warranty-toogle::before,
+#credit-link:checked ~ .services-navigation .credit-toogle::before {
+
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 280px;
+    height: 40px;
+    background: #000000;
+    color: #f7e184;
+    opacity: 1;
+    z-index: -1;
+}
+
+#delivery-link:checked ~ .services-navigation .services-item:first-of-type .main-link::after,
+#warranty-link:checked ~ .services-navigation .services-item:nth-of-type(2) .main-link::after,
+#credit-link:checked ~ .services-navigation .services-item:last-of-type .main-link::after {
+    display: none;
+}
+
+#delivery-link:checked ~ .services-navigation .delivery-toogle,
+#warranty-link:checked ~ .services-navigation .warranty-toogle,
+#credit-link:checked ~ .services-navigation .credit-toogle {
+
+    color: #f7e184;
 }
 
 /*-- ГАРАНТИЯ ПЕРЕКЛЮЧАТЕЛЬ --*/
@@ -1179,6 +1214,7 @@ main-footer_user-nav {
 #basic-modal {
     display: none;
 }
+
 /*================HOVER, FOCUS================*/
 
 .main-header_logo .logo:hover,
@@ -1234,19 +1270,6 @@ main-footer_user-nav {
 .main-link:active {
 
     opacity: 0.8;
-
-}
-
-.services-item > .main-link:active::after {
-
-    width: 280px;
-    background: #000000;
-    color: #f7e184;
-    opacity: 1;
-}
-
-.services-link:active {
-    color: #f7e184;
 
 }
 
