@@ -102,7 +102,6 @@ body {
 .search-button {
     border: none;
     background-color: none;
-    background: none;
     background-image: url(../svg/icon-search.svg);
     opacity: .3;
     width: 17px;
