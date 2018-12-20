@@ -83,6 +83,12 @@ a:hover .overlay {
     background: url(img/mishka.jpg) no-repeat center;
 }
 
+.technomart {
+    
+background: url(img/technomart.jpg) no-repeat center; 
+    
+}
+
 .overlay {
     background: rgba(255, 255, 255, .5);
     width: 100%;
