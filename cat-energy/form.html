@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body class="inner-page">
+
+    <header class="main-header">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="main-header__logo">
+                    <a href="index.html">
+                    <img src="img/logo-mobile.png" width="191" height="38" alt="CAT ENERGY" class="logo-mobile">
+                    <img src="img/logo-tablet.png" width="173" height="58" alt="CAT ENERGY" class="logo-tablet">
+                    <img src="img/logo-desktop.png" width="202" height="59" alt="CAT ENERGY" class="logo-desktop">
+                    </a>
+                </div>
+
+                <div class="burger--wrap">
+                    <div class="burger--inactive"></div>
+                </div>
+
+                <nav class="main-nav adaptive-menu--inactive">
+                    <ul class="main-nav__list">
+
+                        <li class="main-nav__item">
+                            <a href="index.html" class="main-nav__section">Главная</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a href="catalog.html" class="main-nav__section">Каталог продукции</a>
+                        </li>
+
+                        <li class="main-nav__item">
+                            <a href="form.html" class="main-nav__section main-nav__section--active">Подбор программы</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="program-selection top-line">
+
+            <div class="container">
+                <h1 class="program-selection__title section-title">Подбор программы</h1>
+                <p class="program-selection__signature">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            </div>
+
+            <form class="program-selection__form" action="#" method="get">
+               <div class="container">
+               <div class="fieldset-flex-wrap">
+                <fieldset class="program_selection__text-data program_selection__fieldset">
+                    <legend class="visualy-hidden">Текстовые данные</legend>
+                       
+                        <label class="program-selection__label text-data__username">Имя:*
+                           <input type="text" name="username" required placeholder="Барсик">
+                        </label>
+
+                        <label class="program-selection__label text-data__weight">Вес (кг):*
+                            <input type="number" name="weight" required placeholder="7">
+                        </label>
+
+                        <label class="program-selection__label text-data__age">Возраст (лет):
+                            <input type="number" name="age" required placeholder="7">
+                        </label>
+                    
+                </fieldset>
+
+                <fieldset class="program_selection__toggle program_selection__fieldset">
+                    <legend class="visualy-hidden">Выбор программы</legend>
+                       
+                        <input id="switch-slim" type="radio" name="swith" class="input-off" checked>
+                        <input id="switch-gain" type="radio" name="swith" class="input-off">
+                        <input id="switch-advice" type="radio" name="swith" class="input-off">
+
+                        <label class="program_selection__swith switch-radio switch-slim" for="switch-slim">
+                           Похудение 
+                       </label>
+
+                        <label class="program_selection__swith switch-radio switch-gain" for="switch-gain">
+                           Набор массы 
+                       </label>
+
+                        <label class="program_selection__swith switch-radio switch-advice" for="switch-advice">
+                           Не знаю (Нужен ваш совет)
+                       </label>
+                    
+                </fieldset>
+                </div>
+                </div>
+
+                <fieldset class="program_selection__contacts program_selection__fieldset green-line-element">
+                    <div class="container">
+                        <legend class="secondary-title contacts-title">Контактные данные (владельца кота)</legend>
+
+                       <div class="contacts-label-flex">
+                        <label class="program-selection__label contacts__email">E-mail:*
+                        <input type="email" name="email" required placeholder="kuklachev@gmail.com">
+                        </label>
+
+                        <label class="program-selection__label contacts__phone">Телефон:*
+                        <input type="tel" name="tel" required placeholder="8 (960) 900-60-90">
+                        </label>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+               <div class="green-line-element comment-wrap">
+                <div class="container">
+                    <h2 class="secondary-title comment-title">Комментарий</h2>
+                    <textarea class="program-selection__comment" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </div>
+                </div>
+
+                <fieldset class="program-selection__additionally program_selection__fieldset green-line-element">
+                    <div class="container">
+                        <legend class="secondary-title additionally-title">Дополнительно</legend>
+
+                       <input id="product1" type="checkbox" name="switch1" checked class="input-off">
+                       <input id="product2" type="checkbox" name="switch1" class="input-off">
+                       <input id="product3" type="checkbox" name="switch1" class="input-off">
+                       <input id="product4" type="checkbox" name="switch1" class="input-off">
+                       
+                       <div class="label-flex-wrap">
+                        <label class="program_selection__swith checkbox-swith product1" for="product1">
+                            Сахарозаменитель
+                         </label>
+
+                        <label class="program_selection__swith checkbox-swith product2" for="product2">
+                            Питьевая вода
+                         </label>
+
+                        <label class="program_selection__swith checkbox-swith product3" for="product3">
+                            Молоко
+                         </label>
+
+                        <label class="program_selection__swith checkbox-swith product4" for="product4">
+                            Витамины
+                         </label>
+                         </div>
+
+                    </div>
+                </fieldset>
+
+                <div class="container">
+                   <div class="flex-wrap submit-container">
+                    <input type="submit" value="Отправить заявку" class="program-selection__submit-btn">
+                    <p class="program-selection__hint">* — Обязательные поля</p>
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="contacts">
+            <h2 class="visualy-hidden">Контакты</h2>
+            <div class="container">
+                <div class="contacts__info">
+                    <h3 class="contacts__info-title">приглашаем <br> к сотрудничеству дилеров!</h3>
+                    <p class="contacts__info-adress">
+                        ул. Большая <br> Конюшенная, д. 19/8
+                        <span>Санкт-Петербург</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contacts__map"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="flex-wrap">
+
+                <div class="main-footer__logo-container">
+                    <a href="index.html" class="main-footer__logo">
+                    <img src="img/footer-logo.png" width="128" height="24" alt="Cat Energy">
+                    </a>
+                </div>
+
+                <ul class="s-list">
+                    <li class="s-item">
+                        <a href="#" class="s-link v-icon"></a>
+                    </li>
+
+                    <li class="s-item">
+                        <a href="#" class="s-link i-icon"></a>
+                    </li>
+
+                    <li class="s-item f-icon">
+                        <a href="#" class="s-link f-icon"></a>
+                    </li>
+                </ul>
+
+                <div class="copyright">
+                    <a href="#" class="copyright-link">HTML Academy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
