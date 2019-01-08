@@ -63,11 +63,6 @@ a:hover .overlay {
     background: url(img/device-logo.jpg) no-repeat center;
 }
 
-.visa {
-
-    background: url(img/visa.jpg) no-repeat center;
-}
-
 .barbershop {
 
     background: url(img/barbershop.jpg) no-repeat center;
@@ -86,6 +81,12 @@ a:hover .overlay {
 .technomart {
     
 background: url(img/technomart.jpg) no-repeat center; 
+    
+}
+
+.cat-energy {
+    
+background: url(img/cat-energy.jpg) no-repeat center; 
     
 }
 
